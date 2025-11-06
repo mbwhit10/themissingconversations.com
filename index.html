@@ -3,37 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Missing Conversations - A Guide for Parents</title>
+    <title>The Missing Conversations - Guiding Our Kids Through an Uncharted World</title>
     
     <link href="./dist/output.css" rel="stylesheet">
-    </head>
-<body class="bg-white font-sans text-gray-800">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
-    <div class="relative isolate overflow-hidden bg-gray-50 py-24 sm:py-32">
+    <style>
+        /* Temporary direct style for fonts, will integrate with Tailwind config later */
+        body { font-family: 'Lato', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+    
+    <div class="relative isolate overflow-hidden bg-gradient-to-b from-stone-100 to-stone-200 py-24 sm:py-32 border-b border-stone-300 shadow-inner">
+        
+        <svg class="absolute inset-0 -z-10 h-full w-full stroke-stone-300 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+            <defs>
+                <pattern id="old-world-map-pattern" width="60" height="60" x="0" y="0" patternUnits="userSpaceOnUse">
+                    <path d="M.5 60V.5H60" fill="none" stroke-opacity="0.3" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#old-world-map-pattern)" />
+        </svg>
+
         <div class="mx-auto max-w-4xl px-6 lg:px-8">
             <div class="text-center">
                 
-                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-stone-900 leading-tight">
                     The Missing Conversations: A Guide to the Talks Nobody Prepared Us For...
-                    <br class="hidden sm:block">
-                    ...But Our Kids Need Us to Have.
+                    <span class="block text-indigo-800 mt-4">...But Our Kids Need Us to Have.</span>
                 </h1>
                 
-                <p class="mt-6 text-xl leading-8 text-gray-700">
+                <p class="mt-8 text-xl leading-relaxed text-stone-700 max-w-2xl mx-auto">
                     Tapping Your Family's Throughlines to Help Your Kids Navigate an Uncharted World.
                 </p>
 
-                <p class="mt-8 text-lg leading-7 text-gray-600">
+                <p class="mt-6 text-lg leading-relaxed text-stone-600 max-w-3xl mx-auto">
                     In a world changing faster than ever, guiding our kids through new challenges—from AI to social pressures—feels overwhelming. But the wisdom you already possess, grounded in your family's enduring values, is more powerful than you realize. Discover a <strong>two-pronged approach</strong> to conversation that empowers your family with clarity, connection, and confidence: <strong>timeless principles for lasting resilience, and practical guides for navigating urgent challenges.</strong>
                 </p>
                 
-                <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#free-guide" class="rounded-md bg-blue-600 px-5 py-3 text-lg font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
-                        Unlock Your Free Interactive AI Guide
+                <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="#free-guide" class="w-full sm:w-auto rounded-md bg-indigo-700 px-8 py-4 text-xl font-bold text-white shadow-lg hover:bg-indigo-800 transition-colors duration-200 transform hover:scale-105">
+                        Unlock Your Free Interactive AI Guide &rarr;
                     </a>
                     
-                    <a href="#our-approach" class="text-lg font-semibold leading-6 text-gray-900 hover:text-gray-700">
-                        Learn More About Our Approach <span aria-hidden="true">→</span>
+                    <a href="#our-approach" class="w-full sm:w-auto text-xl font-semibold leading-6 text-indigo-700 hover:text-indigo-900 transition-colors duration-200">
+                        Explore Our Approach
                     </a>
                 </div>
                 
