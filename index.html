@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Missing Conversations</title>
+    <link rel="stylesheet" href="./public/tailwind.css" />
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <header class="px-6 py-12 text-center">
+      <p class="text-sm font-semibold uppercase tracking-widest text-indigo-300">
+        Coming Soon
+      </p>
+      <h1 class="mt-4 text-4xl font-bold tracking-tight text-slate-50 sm:text-5xl">
+        The Missing Conversations
+      </h1>
+      <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
+        A space for the thoughtful, challenging, and necessary discussions that shape the world
+        we want to live in. We’re building it in the open—follow along as the project comes to life.
+      </p>
+    </header>
+
+    <main class="px-6 pb-16">
+      <section class="mx-auto max-w-3xl rounded-2xl border border-indigo-500/30 bg-slate-900/60 p-8 shadow-lg shadow-indigo-500/10">
+        <h2 class="text-2xl font-semibold text-indigo-200">Stay in the loop</h2>
+        <p class="mt-3 text-slate-300">
+          Join the mailing list to get early previews, behind-the-scenes updates, and invitations
+          to the conversations as they unfold.
+        </p>
+        <form class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <label for="email" class="sr-only">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="you@example.com"
+            class="w-full rounded-xl border border-indigo-500/20 bg-slate-950/70 px-4 py-3 text-base text-slate-100 placeholder:text-slate-500 focus:border-indigo-400 focus:outline-none focus:ring focus:ring-indigo-500/30"
+          />
+          <button
+            type="submit"
+            class="rounded-xl bg-indigo-500 px-6 py-3 text-base font-semibold text-white transition hover:bg-indigo-400 focus:outline-none focus:ring focus:ring-indigo-500/40"
+          >
+            Notify Me
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="px-6 pb-12 text-center text-sm text-slate-500">
+      © <span id="year"></span> The Missing Conversations. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
